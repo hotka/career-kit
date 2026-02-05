@@ -1,0 +1,28 @@
+{
+  "env": {
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "80",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "claude-sonnet-4-20250514",
+  },
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(npx md-to-pdf:*)",
+      "Bash(tee:*)",
+      "Edit",
+      "Read",
+      "Skill",
+      "WebFetch",
+      "WebSearch",
+      "Write",
+      "mcp__jetbrains__*",
+      "ENABLE_TOOL_SEARCH"
+    ],
+    "ask": ["Bash(rm:*)"],
+    "deny": ["Read(**/secrets/**)", "Read(.env)", "Read(.env.*)"]
+  },
+  "enabledMcpjsonServers": ["jetbrains"]
+}
